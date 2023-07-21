@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::controller(GuestController::class)->name('guest.')->group(function(){
+
+    Route::get('/', 'welcome')->name('welcome');
+
 });
