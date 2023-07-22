@@ -20,9 +20,9 @@
                     To Commute Across Cities
                 </rs-layer>
                 <rs-layer id="slider-27-slide-70-layer-2" data-type="text" data-rsp_ch="on" data-xy="xo:15px,12px,9px,5px;yo:535px,445px,338px,219px;" data-text="w:normal;s:18,14,16,16;l:25,20,20,20;fw:500;" data-frame_0="x:-100%;" data-frame_0_mask="u:t;" data-frame_1="e:power4.inOut;st:1000;sp:1300;" data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;" style="z-index:10;font-family:'Roboto';">
-                    FesGrade is an African technology powered company, 
+                    FesGrade is a Nigerian technology-driven transport and logisticts company, 
                     <br>
-                    providing seamless mobility services to commuters across Africa
+                    providing seamless mobility services to commuters across Nigeria and beyond
                 </rs-layer>
                 <a id="slider-27-slide-70-layer-5" 
                     class="rs-layer rev-btn"
@@ -103,8 +103,8 @@
                     data-frame_1_mask="u:t;"
                     data-frame_999="o:0;st:w;"
                     style="z-index:10;font-family:'Roboto';"
-                    >Send and receive packages to and from any part of teh world<br />
-                    FesGrade is your best choice for cargo and logistics
+                    >Send and receive packages to and from any part of the world<br />
+                    FesGrade is your best choice for cargo and logistics.
                 </rs-layer>
                 <a
                     id="slider-27-slide-72-layer-5" 

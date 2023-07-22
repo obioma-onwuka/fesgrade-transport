@@ -53,15 +53,15 @@
                             <h3 class="widget-title">Gallery </h3>
                             <ul class="zoom-gallery">
                                 <li>
-                                    <a href="assets/img/gallery/gl1.jpg" data-source="assets/img/gallery/gl1.jpg">
-                                        <img src="assets/img/gallery/gl1.jpg" alt="">
+                                    <a href="{{ asset('/front/assets/img/gallery/gl1.jpg') }}" data-source="{{ asset('/front/assets/img/gallery/gl1.jpg') }}">
+                                        <img src="{{ asset('/front/assets/img/gallery/gl1.jpg') }}" alt="">
                                     </a>
                                 </li>
-                                <li><a href="assets/img/gallery/gl2.jpg" data-source="assets/img/gallery/gl2.jpg"><img src="assets/img/gallery/gl2.jpg" alt=""></a></li>
-                                <li><a href="assets/img/gallery/gl3.jpg" data-source="assets/img/gallery/gl3.jpg"><img src="assets/img/gallery/gl3.jpg" alt=""></a></li>
-                                <li><a href="assets/img/gallery/gl4.jpg" data-source="assets/img/gallery/gl4.jpg"><img src="assets/img/gallery/gl4.jpg" alt=""></a></li>
-                                <li><a href="assets/img/gallery/gl5.jpg" data-source="assets/img/gallery/gl4.jpg"><img src="assets/img/gallery/gl5.jpg" alt=""></a></li>
-                                <li><a href="assets/img/gallery/gl6.jpg" data-source="assets/img/gallery/gl4.jpg"><img src="assets/img/gallery/gl6.jpg" alt=""></a></li>
+                                <li><a href="{{ asset('/front/assets/img/gallery/gl2.jpg') }}" data-source="{{ asset('/front/assets/img/gallery/gl2.jpg') }}"><img src="{{ asset('/front/assets/img/gallery/gl2.jpg') }}" alt=""></a></li>
+                                <li><a href="{{ asset('/front/assets/img/gallery/gl3.jpg') }}" data-source="{{ asset('/front/assets/img/gallery/gl3.jpg') }}"><img src="{{ asset('/front/assets/img/gallery/gl3.jpg') }}" alt=""></a></li>
+                                <li><a href="{{ asset('/front/assets/img/gallery/gl4.jpg') }}" data-source="{{ asset('/front/assets/img/gallery/gl4.jpg') }}"><img src="{{ asset('/front/assets/img/gallery/gl4.jpg') }}" alt=""></a></li>
+                                <li><a href="{{ asset('/front/assets/img/gallery/gl5.jpg') }}" data-source="{{ asset('/front/assets/img/gallery/gl4.jpg') }}"><img src="{{ asset('/front/assets/img/gallery/gl5.jpg') }}" alt=""></a></li>
+                                <li><a href="{{ asset('/front/assets/img/gallery/gl6.jpg') }}" data-source="{{ asset('/front/assets/img/gallery/gl4.jpg') }}"><img src="{{ asset('/front/assets/img/gallery/gl6.jpg') }}" alt=""></a></li>
                             </ul>
                         </div>
                     </div>

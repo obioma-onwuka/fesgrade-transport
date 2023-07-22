@@ -20,19 +20,19 @@
                                 <li>
                                     <a href="{{ route('guest.welcome') }}">Home</a>
                                 </li>
-                                <li><a href="about.html">Booking</a></li>
+                                <li><a href="{{ route('guest.booking.show') }}">Booking</a></li>
                                 <li>
                                     <a href="!#">Terminals</a>
                                 </li>
                                 <li>
-                                    <a href="!#">Services</a>
+                                    <a href="{{ route('guest.services') }}">Services</a>
                                 </li>
                                 <li class="dropdown">
                                     <a href="!#">Resources</a>
                                     <ul class="dropdown-menu clearfix">
                                         <li><a href="team.html">About Us </a></li>
-                                        <li><a href="team-single.html">Faq </a></li>
-                                        <li><a href="team-single.html">Contact Us </a></li>
+                                        <li><a href="{{route('guest.faq') }}">Faq </a></li>
+                                        <li><a href="{{ route('guest.contact.show') }}">Contact Us </a></li>
                                     </ul>
                                 </li>
                                 <li>

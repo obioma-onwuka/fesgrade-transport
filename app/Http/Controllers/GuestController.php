@@ -13,4 +13,34 @@ class GuestController extends Controller
 
     }
 
+    public function faq(){
+
+        return view ('faq');
+
+    }
+
+    public function contactShow(){
+
+        return view ('contact');
+
+    }
+
+    public function services(){
+
+        return view('services');
+
+    }
+
+    public function showTracking(){
+
+        return view ('tracking');
+
+    }
+
+    public function showBookingPage(){
+
+        return view ('booking');
+
+    }
+
 }
