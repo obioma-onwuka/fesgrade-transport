@@ -17,7 +17,29 @@ class AuthController extends Controller
 
     public function login(Request $request){
 
+        $formData = $request->validate([
 
+            'email' => [
+                'required', 'max:72'
+            ],
+            'password' => [
+                'required'
+            ]
+
+        ]);
+
+        $formData['email'] = strip_tags($formData['email']);
+        $formData['password'] = strip_tags($formData['password']);
+
+        $isLogged = auth()->attempt($formData);
+
+        if($isLogged){
+
+            $request->session()->regenerate();
+            return redirect()->route('guest.check.role');
+
+        }
+        return back()->with('error', 'Login failed, please try again later.');
 
     }
 
@@ -70,5 +92,6 @@ class AuthController extends Controller
 
 
     }
+
 
 }

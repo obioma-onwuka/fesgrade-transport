@@ -10,6 +10,7 @@
         <meta name="description" content="pet reunite platform for per lovers" />
         <meta name="keywords" content="php backend developer in nigeria; laravel developer; pet app with qrcode; developer, naija techbro; php developer, php backend">
         <meta name="author" content="Obtechng" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
     
         <link rel="icon" type="image/x-icon" href="{{ asset('/front/assets/img/logo/ficon.png') }}" />

@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" href="{{ asset('/front/assets/img/logo/ficon.png') }}" type="image/x-icon">
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 
 	<link rel="stylesheet" href="{{ asset('/front/assets/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('/front/assets/css/fontawesome-all.css') }}">

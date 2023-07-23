@@ -34,8 +34,15 @@
                             <div class="mb-3">
 
                                 <label for="email" class="form-label">Email:</label>
-                                <input type="email" name="email" id="email" class="form-control"  autofocus autocomplete="username">
+                                <input type="email" name="email" id="email" class="form-control"  autofocus value = {{old('email')}}>
                                 
+                                @error('email')
+                                    <div class="text-danger" role="alert">
+                                        <small>
+                                            {{ $message }}
+                                        </small>
+                                    </div>
+                                @enderror
 
                             </div>
 
@@ -56,6 +63,15 @@
                                     <span class="input-group-text cursor-pointer">
                                         <i class="bx bx-hide" style = "color: #595BD9"></i>
                                     </span>
+
+                                    @error('password')
+                                        <div class="text-danger" role="alert">
+                                            <small>
+                                                {{ $message }}
+                                            </small>
+                                        </div>
+                                    @enderror
+
                                 </div>
                                 
 

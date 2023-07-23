@@ -1,8 +1,8 @@
-<x-backend.main>
+<x-user_layout>
     @section('title', 'Dashboard')
 
-    @include('layouts._userpartials')
-    @include('layouts._usertopbar')
+    {{-- @include('layouts._userpartials')
+    @include('layouts._usertopbar') --}}
 
 
 
@@ -21,7 +21,7 @@
 												<h5>Home</h5>
 											</div>
 											<ul class="breadcrumb">
-												<li class="breadcrumb-item"><a href="{{route('dashboard')}}"><i class="feather icon-home"></i></a></li>
+												<li class="breadcrumb-item"><a href = "#"><i class="feather icon-home"></i></a></li>
 												<li class="breadcrumb-item"><a href="#!">Dashboard</a></li>
 											</ul>
 										</div>
@@ -34,12 +34,10 @@
                                 <div class="col-md-8 col-xl-8">
 									<div class="card user-card">
 										<div class="card-header">
-											<h5>Welcome <span class="text-success text-capitalize"><strong>{{ $userCheck->name }}</strong></span></h5>
+											<h5>Welcome <span class="text-success text-capitalize"><strong>{{ $userCheck->first_name }}</strong></span></h5>
 										</div>
 										<div class="card-body text-center">
-											<div class="usre-image bg-c-blue" style = "padding:8px">
-												<img src="/img/{{ $userCheck->photo }}" class="img-radius wid-100 m-auto" alt="User-Profile-Image" style = "border: 1px solid #739409; padding: 3px">
-											</div>
+											
 											<p class = "mt-3 mb-3">Joined: <strong>{{date('D jS M, Y', strtotime(strip_tags($userCheck->created_at)))}}</strong></p>
 											<hr>
 											<p class="m-t-15">Pet Reunite aims at connecting strayed pets back to their owners. When you register your pet; a printable PET TAG is generated, then attach the tag to the leash of the pet. One can scan the QRCODE on the pet tage, to reveal information about the pet owner, and understand possible means to inform the owner about the strayed pet.</p>
@@ -54,13 +52,13 @@
 											<div class="row align-items-center m-b-25">
 												<div class="col">
 													<h6 class="m-b-5 text-white">Total Pets</h6>
-													<h3 class="m-b-0 text-white">{{ $petCounter }}</h3>
+													<h3 class="m-b-0 text-white">#</h3>
 												</div>
 												<div class="col-auto">
 													<i class="fa fa-cat text-c-blue f-18"></i>
 												</div>
 											</div>
-											<p class="m-b-0 text-white"><a href="{{route('pets.index')}}" style = "color:aqua">Details</a></p>
+											<p class="m-b-0 text-white"><a href="#" style = "color:aqua">Details</a></p>
 										</div>
 									</div>
 								</div>
@@ -76,4 +74,4 @@
 	</div>
 
     
-</x-backend.main>
+</x-user_layout>

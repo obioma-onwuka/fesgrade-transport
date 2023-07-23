@@ -23,6 +23,7 @@ Route::controller(GuestController::class)->name('guest.')->group(function(){
     Route::get('/services', 'services')->name('services');
     Route::get('/tracking', 'showTracking')->name('tracking');
     Route::get('/booking', 'showBookingPage')->name('booking.show');
+    Route::get('/i_checker', 'check_role')->name('check.role');
 
 });
 
