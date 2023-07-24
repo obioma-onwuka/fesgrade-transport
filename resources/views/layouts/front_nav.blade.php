@@ -27,6 +27,7 @@
                                 <li>
                                     <a href="{{ route('guest.services') }}">Services</a>
                                 </li>
+                                
                                 <li class="dropdown">
                                     <a href="!#">Resources</a>
                                     <ul class="dropdown-menu clearfix">
@@ -35,14 +36,46 @@
                                         <li><a href="{{ route('guest.contact.show') }}">Contact Us </a></li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="{{ route('auth.login.show') }}">Login</a>
-                                </li>
+                                
+                                @auth
+
+                                    <li class="dropdown">
+                                        <a href="#">My Account</a>
+                                        <ul class="dropdown-menu clearfix">
+                                            <li>
+                                                <a href="{{ route('logged.check.role') }}">Dashboard </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{route('guest.faq') }}">Settings </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('profile.logout') }}">Logout </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                @else
+
+                                    <li>
+                                        <a href="{{ route('auth.login.show') }}">Login</a>
+                                    </li>
+
+                                @endauth
+
+
+                                
                             </ul>
                         </nav>
-                        <div class="ft-header-cta-btn">
-                            <a class="d-flex justify-content-center align-items-center" href="{{ route('auth.register.show') }}">Register</a>
-                        </div>
+
+                        @auth
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        @else
+
+                            <div class="ft-header-cta-btn">
+                                <a class="d-flex justify-content-center align-items-center" href="{{ route('auth.register.show') }}">Register</a>
+                            </div>
+
+                        @endauth
                     </div>
                 </div>
                 <div class="mobile_menu position-relative">

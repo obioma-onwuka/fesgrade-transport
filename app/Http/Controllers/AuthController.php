@@ -36,7 +36,7 @@ class AuthController extends Controller
         if($isLogged){
 
             $request->session()->regenerate();
-            return redirect()->route('guest.check.role');
+            return redirect()->route('logged.check.role');
 
         }
         return back()->with('error', 'Login failed, please try again later.');

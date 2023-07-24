@@ -1,8 +1,8 @@
 <x-user_layout>
     @section('title', 'Dashboard')
 
-    {{-- @include('layouts._userpartials')
-    @include('layouts._usertopbar') --}}
+    @include('layouts.usernavbar')
+    @include('layouts.usertopbar')
 
 
 
@@ -22,7 +22,7 @@
 											</div>
 											<ul class="breadcrumb">
 												<li class="breadcrumb-item"><a href = "#"><i class="feather icon-home"></i></a></li>
-												<li class="breadcrumb-item"><a href="#!">Dashboard</a></li>
+												<li class="breadcrumb-item"><a href="{{ route('logged.check.role') }}">Dashboard</a></li>
 											</ul>
 										</div>
 									</div>
