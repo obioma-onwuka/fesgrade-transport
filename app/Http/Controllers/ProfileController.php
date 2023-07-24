@@ -6,7 +6,14 @@ use Illuminate\Http\Request;
 
 class ProfileController extends Controller
 {
-    
+
+    public function bookings(){
+
+        
+
+    }
+
+
     public function logout(Request $request){
 
         auth()->logout();
